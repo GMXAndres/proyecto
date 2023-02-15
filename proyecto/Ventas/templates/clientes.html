@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div>
+    <h1>hola pendejos esta es la pagina de clientes</h1>
+    {% for i in clientes %}
+    <h2> {{i.codigo}}</h2>
+    <h2> {{i.nombre}}</h2>
+    <h2> {{i.telefono}}</h2>
+    {% endfor %}
+</div>
+
+{% endblock %}
