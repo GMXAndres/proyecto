@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import Cliente, Producto
 # Create your views here.
 def ventas_view(request):
@@ -14,3 +14,12 @@ def clientes_view(request):
         'clientes':clientes,
     }
     return render(request,'clientes.html', context)
+
+def add_cliente_view(request):
+    return redirect('Clientes')
+
+def edit_cliente_view(request):
+    return redirect('Clientes')
+    
+def delete_cliente_view(request):
+    return redirect('Clientes')
